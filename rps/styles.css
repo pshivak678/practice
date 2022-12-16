@@ -1,0 +1,85 @@
+
+.game{
+    display:flex;
+    padding: 5%;
+    flex-direction: column;
+    background: url(https://img.freepik.com/premium-vector/hands-playing-rock-paper-scissors-game-flat-design-style-vector-illustration_540284-598.jpg?w=2000) center center no-repeat;
+    opacity: 60%;
+    background: size 50px;
+}
+
+.choice{
+    display: flex;
+    gap: 20px;
+    padding: 0%;
+    border: 10px red;
+    text-align: center;   
+    font-weight: bolder; 
+    margin: 5%;
+    font-weight: bold;
+    color: #000000; 
+    border: 3px solid black;
+    opacity: 100%;
+}
+
+.rock:hover{
+    transform: scale(1.2);
+    border-color: gold;
+    box-shadow: 0 0 10px gold;
+}
+
+.paper:hover{
+    transform: scale(1.2);
+    border-color: gold;
+    box-shadow: 0 0 10px gold;
+}
+
+.scissiors:hover{
+    transform: scale(1.2);
+    border-color: gold;
+    box-shadow: 0 0 10px gold;
+}
+
+.rock{
+    background-color: chartreuse;
+    flex: content;
+    text-shadow: 10px;
+    text-anchor: end;
+    font-family: monospace;
+    font-size:  20px;
+    cursor: pointer;
+    font-weight: bolder;
+    color: black;
+    transition: 100ms;
+}
+
+.paper{
+    background-color:blueviolet;
+    flex: content;
+    font-family: monospace;
+    font-size:  20px;;
+    cursor: pointer;
+}
+
+.scissiors{
+    background-color:darkorange;
+    flex: content;
+    font-family: monospace;
+    font-size:  20px;
+    cursor: pointer;
+}
+
+.results{
+    display:flex;
+    flex:1;
+    font-family: fantasy;
+    font-size: larger;
+    gap: 60%;
+    padding: 20%;
+    text-align: center;
+    flex:content;
+    border: 10px;
+    flex-shrink: 10px;
+    color: #000000; 
+    border: 3px solid black;
+}

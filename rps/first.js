@@ -3,14 +3,12 @@ function getComputerChoice(){
     return choice[Math.floor(Math.random() * 3)];
 }
 
-const playerSelection = prompt('enter your choice:');
-const computerSelection = getComputerChoice();
 
 function playRound(playerSelection,computerSelection){
     if(playerSelection===computerSelection) {
         alert('ITS TIE GAME!');
     }
-    
+
     if (playerSelection==="rock") {
         if(computerSelection=='paper') alert("COMPUTER WON THE GAME!");
         if(computerSelection=='scissiors') alert("PLAYER WON THE GAME!");
@@ -27,6 +25,34 @@ function playRound(playerSelection,computerSelection){
     }
 }
 
-playRound(playerSelection,computerSelection);
+const countPlayer = document.getElementById("score-player");
+const countComputer = document.getElementById("score-player");
+
+
+const x = document.getElementById("rock");
+
+x.addEventListener("click",onRockClick);
+function onRockClick(){
+    playerSelection = "rock";
+    playRound(playerSelection,getComputerChoice());
+}
+
+const y = document.getElementById("paper");
+y.addEventListener("click",onPaperClick);
+function onPaperClick(){
+    playerSelection = "paper";
+    playRound(playerSelection,getComputerChoice());
+}
+
+const z = document.getElementById("scissiors");
+z.addEventListener("click",onScissiorsClick);
+function onScissiorsClick(){
+    playerSelection = "scissiors";
+    playRound(playerSelection,getComputerChoice());
+}
+
+
+
+
 
 
